@@ -1,8 +1,8 @@
 class Sver < Formula
   desc "Semver (Semantic Version) parsing & utility script/function library in pure bash"
   homepage "https://github.com/robzr/sver"
-  url "https://github.com/robzr/sver/releases/download/v1.2.1/sver"
-  sha256 "58d304ac2bfe7ea26145c11a846058e71b12cd71b782ccc9c5b2aa60c97c9963"
+  url "https://github.com/robzr/sver/releases/download/v1.2.4/sver"
+  sha256 "e823d2e44a701023deefd9b99877c0e9901023394e21f16b9844c703947e1992"
   license "CC-BY-SA-3.0"
 
   def install
@@ -10,6 +10,6 @@ class Sver < Formula
   end
 
   test do
-    assert_match "v1.2.1", shell_output("#{bin}/sver version")
+    assert_match "v1.2.4", shell_output("#{bin}/sver version")
   end
 end
